@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit UI | Molécules et organismes</title>
+  <head>
+    <link rel="stylesheet" href="style.css">
+   
+      <script>
+        function navigate(url= "") {
+            document.getElementById("kitFrame").src
+                = url;
+        }
+    </script>
+  </head>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://bootswatch.com/cerulean/">Kit UI Cerulean</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor04">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" onclick="navigate('_kit_ui.html')">Accueil
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <!-- PRINCIPAL -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Principal</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="navigate('_navbar.html')">Navbar</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_footer.html')">Footer</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" onclick="navigate('_banner.html')">Bannière</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_banner_sm.html')">Bannière (petite)</a>
+              </div>
+            </li>
+            <!-- FORMULAIRES AUTHENTIFICATION -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Formulaires</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="navigate('_form_signin.html')">Connexion</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_form_register.html')">Inscription</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_form_forget_pwd.html')">Mot de passe oublié</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_form_change_pwd.html')">Changement de mot de passe</a>
+              </div>
+            </li>
+
+            <!-- CONTENU  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contenu</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="navigate('_cards.html')">Cartes</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_lists.html')">Listes</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_comments.html')">Commentaires</a>
+                <a class="dropdown-item" href="#" onclick="navigate('_text_img.html')">Text-image</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" onclick="navigate('_show.html')">show event</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <iframe id="kitFrame" src="_kit_ui.html"
+        style="height: 100vh; width: 100vw; border:0;">
+    </iframe>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
