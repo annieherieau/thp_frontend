@@ -1,5 +1,5 @@
 
 # CSS : Molécules et organismes
 
-Kit UI et création des conposants
+Kit UI et création des composants
 
